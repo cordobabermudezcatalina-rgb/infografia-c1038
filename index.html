@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sentencia C-1038/02 · Infografía interactiva</title>
+<meta name="description" content="Infografía interactiva sobre la Sentencia C-1038 de 2002 de la Corte Constitucional: quién puede decidir en un arbitraje, qué pueden hacer los centros de arbitraje y un tablero para armar el mapa de la sentencia.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sentencia C-1038/02 · Infografía interactiva">
+<meta property="og:description" content="¿Quién puede decidir en un arbitraje? Recorrido interactivo y tablero de repaso sobre la C-1038 de 2002.">
+<meta name="theme-color" content="#5454E9">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Íconos de línea: esquinas angulares, grosor uniforme, sin relleno (manual Icesi) -->
+<svg width="0" height="0" class="sprite" aria-hidden="true">
+  <defs>
+    <symbol id="i-balanza" viewBox="0 0 24 24"><path d="M12 3v17M7 21h10M3 7h18M3 7l-2.5 6h5zM21 7l-2.5 6h5zM.5 13a2.5 2.5 0 0 0 5 0M18.5 13a2.5 2.5 0 0 0 5 0"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M5 2h10l4 4v16H5zM15 2v4h4M8 11h8M8 15h8M8 19h5"/></symbol>
+    <symbol id="i-persona" viewBox="0 0 24 24"><circle cx="12" cy="7.5" r="4"/><path d="M4 22v-3.5A3.5 3.5 0 0 1 7.5 15h9a3.5 3.5 0 0 1 3.5 3.5V22z"/></symbol>
+    <symbol id="i-partes" viewBox="0 0 24 24"><circle cx="7.5" cy="8" r="3"/><circle cx="16.5" cy="8" r="3"/><path d="M2 20v-3a3 3 0 0 1 3-3h5a3 3 0 0 1 3 3v3M13 14h6a3 3 0 0 1 3 3v3"/></symbol>
+    <symbol id="i-centro" viewBox="0 0 24 24"><path d="M2 9l10-6 10 6zM4 9v10M9 9v10M15 9v10M20 9v10M2 21h20"/></symbol>
+    <symbol id="i-mazo" viewBox="0 0 24 24"><path d="M9 2l7 7-3.5 3.5-7-7zM14 10.5l7.5 7.5M3 22h10M5 19h6"/></symbol>
+    <symbol id="i-reloj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5V12h4.5"/></symbol>
+    <symbol id="i-llave" viewBox="0 0 24 24"><circle cx="7" cy="12" r="4.5"/><path d="M11.5 12H22M18 12v4M21.5 12v3"/></symbol>
+    <symbol id="i-mover" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M9 5l3-3 3 3M9 19l3 3 3-3M5 9l-3 3 3 3M19 9l3 3-3 3"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 4v6h6"/><path d="M4.6 15a8 8 0 1 0 1.9-8.3L4 10"/></symbol>
+    <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M3 12h17M14 6l6 6-6 6"/></symbol>
+    <symbol id="i-abajo" viewBox="0 0 24 24"><path d="M12 3v17M6 14l6 6 6-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M3 12.5l6 6L21 6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></symbol>
+    <symbol id="i-libro" viewBox="0 0 24 24"><path d="M4 3h13v18H4zM17 6h3v15H7M8 8h5M8 12h5"/></symbol>
+    <symbol id="i-voltear" viewBox="0 0 24 24"><path d="M3 9h15l-4-4M21 15H6l4 4"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-juez" viewBox="0 0 24 24"><circle cx="12" cy="6.5" r="3.5"/><path d="M5 22v-6l7-4 7 4v6zM12 12v10"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+    <symbol id="i-compress" viewBox="0 0 24 24"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></symbol>
+    <symbol id="i-mapa" viewBox="0 0 24 24"><path d="M3 4h7v7H3zM14 4h7v7h-7zM3 15h7v5H3zM14 15h7v5h-7zM6.5 11v4M17.5 11v4"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#caso">Saltar al contenido</a>
+
+<header class="topbar" id="topbar">
+  <a class="topbar-logo" href="#inicio" aria-label="Universidad Icesi, ir al inicio">
+    <img src="assets/logo-universidad-icesi-azul.svg" alt="Universidad Icesi" width="129" height="48">
+  </a>
+  <nav class="topnav" aria-label="Secciones">
+    <a href="#inicio" data-nav="inicio"><b>00</b><span>Portada</span></a>
+    <a href="#caso" data-nav="caso"><b>01</b><span>El caso</span></a>
+    <a href="#voces" data-nav="voces"><b>02</b><span>Las voces</span></a>
+    <a href="#marco" data-nav="marco"><b>03</b><span>El marco</span></a>
+    <a href="#clave" data-nav="clave"><b>04</b><span>La clave</span></a>
+    <a href="#designa" data-nav="designa"><b>05</b><span>¿Quién designa?</span></a>
+    <a href="#decision" data-nav="decision"><b>06</b><span>La decisión</span></a>
+    <a href="#votos" data-nav="votos"><b>07</b><span>Votos</span></a>
+    <a href="#mapa" data-nav="mapa"><b>08</b><span>El mapa</span></a>
+  </nav>
+  <div class="cenefa" id="cenefa" role="progressbar" aria-label="Avance de lectura" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="topnav-sheet"><svg class="ic"><use href="#i-menu"/></svg><span class="sr">Índice</span></button>
+</header>
+<nav class="sheet" id="topnav-sheet" aria-label="Índice" hidden></nav>
+
+<main>
+
+<!-- ===================== 00 PORTADA ===================== -->
+<section class="sec sec--azul" id="inicio" aria-labelledby="t-inicio" data-sec="inicio">
+  <div class="board grid-on-dark cover" data-board="portada">
+    <div class="cover-main">
+      <p class="kicker">Corte Constitucional · Sala Plena · Sentencia de constitucionalidad</p>
+      <h1 class="cover-title" id="t-inicio">C-1038/02</h1>
+      <p class="cover-q"><span>¿Quién puede decidir en un arbitraje?</span></p>
+      <p class="cover-lead">En 2002 la Corte revisó qué podían hacer los centros de arbitraje antes de que existiera el tribunal. Su respuesta cambió la manera en que arranca un proceso arbitral en Colombia.</p>
+      <div class="cover-actions">
+        <a class="btn btn--white" href="#caso">Empezar el recorrido <svg class="ic"><use href="#i-abajo"/></svg></a>
+      </div>
+      <p class="hint hint--light"><svg class="ic"><use href="#i-mover"/></svg>Todas las tarjetas se pueden mover: arrástralas y se acomodan solas sobre la retícula. Usa ← y → para pasar de sección. Al final te espera un tablero para <a href="#mapa">armar el mapa de la sentencia</a>.</p>
+    </div>
+    <div class="cover-cards">
+      <article class="card drag" data-id="f-fecha" style="--r:-3deg"><span class="grip" aria-hidden="true"></span><small>Fecha</small><strong>28 de noviembre de 2002</strong></article>
+      <article class="card drag" data-id="f-ponente" style="--r:2deg"><span class="grip" aria-hidden="true"></span><small>Magistrado ponente</small><strong>Eduardo Montealegre Lynett</strong></article>
+      <article class="card drag" data-id="f-actor" style="--r:1.5deg"><span class="grip" aria-hidden="true"></span><small>Demandante</small><strong>Andrés Felipe Ospina</strong></article>
+      <article class="card drag" data-id="f-exp" style="--r:-2deg"><span class="grip" aria-hidden="true"></span><small>Expediente</small><strong>D-4066</strong></article>
+      <article class="card drag card--black" data-id="f-norma" style="--r:-1deg"><span class="grip" aria-hidden="true"></span><small>Norma en juego</small><strong>Artículo 116 de la Constitución</strong></article>
+      <article class="card drag" data-id="f-accion" style="--r:2.5deg"><span class="grip" aria-hidden="true"></span><small>Acción</small><strong>Pública de inconstitucionalidad</strong></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 01 EL CASO ===================== -->
+<section class="sec sec--paper" id="caso" aria-labelledby="t-caso" data-sec="caso">
+  <div class="board grid-on-light" data-board="caso">
+    <header class="sec-head">
+      <h2 class="sec-title bg-naranja" id="t-caso"><span>01</span> El caso</h2>
+      <button class="reset" data-reset="caso" type="button"><svg class="ic"><use href="#i-reset"/></svg>Reordenar</button>
+    </header>
+
+    <div class="caso-grid">
+      <div class="caso-text">
+        <p class="lead">Andrés Felipe Ospina demandó las normas que regulaban la llamada <strong>«etapa prearbitral»</strong>: lo que ocurre ante el centro de arbitraje antes de que el tribunal se instale.</p>
+        <article class="card drag card--accent" data-id="c-cargo" style="--accent:var(--naranja)">
+          <span class="grip" aria-hidden="true"></span>
+          <small>El cargo</small>
+          <p>En esa etapa, el centro y su director admiten o rechazan la solicitud, corren traslado de la demanda, reciben la contestación, la contrademanda y las excepciones, y conducen la conciliación. Para el demandante, eso es administrar justicia sin haber sido habilitados por las partes: el artículo 116 solo se lo permite a los particulares como árbitros o conciliadores.</p>
+        </article>
+        <article class="card drag card--yellow" data-id="c-problema">
+          <span class="grip" aria-hidden="true"></span>
+          <small>El problema jurídico</small>
+          <p class="big">¿Las funciones que la ley le da al centro de arbitraje y a su director en la fase prearbitral desconocen la función propia de los árbitros y el carácter excepcional de la justicia que imparten los particulares?</p>
+        </article>
+      </div>
+
+      <div class="caso-play">
+        <p class="play-title"><svg class="ic"><use href="#i-mover"/></svg><span>Arrastra cada norma demandada hasta el artículo 116 <em class="sub">(o tócala) para ver qué decía y por qué se acusó.</em></span></p>
+        <div class="norm-stage">
+          <div class="target zone" data-zone="art116" id="target116" tabindex="0" role="button" aria-label="Artículo 116 de la Constitución. Suelta aquí una norma.">
+            <span class="target-k">Constitución</span>
+            <span class="target-n">Art. 116</span>
+            <span class="target-s">Suelta aquí</span>
+            <ul class="zone-list" aria-hidden="true"></ul>
+          </div>
+          <div class="pool" data-pool="normas" id="poolNormas">
+            <button class="chip chip--norm" type="button" data-chip="a13"><span><b>Art. 13</b> · Decreto 2651/91</span></button>
+            <button class="chip chip--norm" type="button" data-chip="a15"><span><b>Art. 15</b> · Decreto 2651/91</span></button>
+            <button class="chip chip--norm" type="button" data-chip="a119"><span><b>Art. 119</b> · Ley 446/98</span></button>
+            <button class="chip chip--norm" type="button" data-chip="a121"><span><b>Art. 121</b> · Ley 446/98</span></button>
+            <button class="chip chip--norm" type="button" data-chip="a122"><span><b>Art. 122</b> · Ley 446/98</span></button>
+          </div>
+        </div>
+        <div class="done-list" id="normasDone" aria-label="Normas revisadas"></div>
+        <div class="reveal" id="normReveal" aria-live="polite">
+          <p class="reveal-empty">Art. 116, inciso 4: los particulares pueden administrar justicia de forma transitoria como conciliadores o como <strong>árbitros habilitados por las partes</strong>, «en los términos que determine la ley».</p>
+        </div>
+        <p class="note">Los arts. 13 y 15 venían de un decreto transitorio de descongestión judicial (2651 de 1991) que el art. 162 de la Ley 446 de 1998 volvió permanente.</p>
+      </div>
+    </div>
+    <a class="next" href="#voces">Siguiente: 02 Las voces <svg class="ic"><use href="#i-flecha"/></svg></a>
+  </div>
+</section>
+
+<!-- ===================== 02 LAS VOCES ===================== -->
+<section class="sec sec--morado" id="voces" aria-labelledby="t-voces" data-sec="voces">
+  <div class="board grid-on-dark" data-board="voces">
+    <header class="sec-head">
+      <h2 class="sec-title bg-negro" id="t-voces"><span>02</span> Las voces</h2>
+      <button class="reset reset--light" data-reset="voces" type="button"><svg class="ic"><use href="#i-reset"/></svg>Reiniciar</button>
+    </header>
+    <p class="lead lead--light">Antes de decidir, la Corte escuchó a cuatro intervinientes. El demandante ya está en la balanza: <strong>arrastra a cada voz al plato que defendió</strong> y mira hacia dónde se inclina.</p>
+
+    <div class="voces-grid">
+      <div class="balance-wrap">
+        <div class="balance" id="balance" style="--tilt:0deg">
+          <div class="b-post"></div>
+          <div class="b-base"></div>
+          <div class="b-beam"><span class="b-cap"></span></div>
+          <div class="plate plate--ex zone" data-zone="ex" tabindex="0" role="button" aria-label="Plato exequible: la norma se queda">
+            <span class="strings"></span>
+            <div class="dish">
+              <span class="dish-label bg-verde">Exequible</span>
+              <ul class="zone-list"></ul>
+            </div>
+          </div>
+          <div class="plate plate--in zone" data-zone="in" tabindex="0" role="button" aria-label="Plato inexequible: la norma sale">
+            <span class="strings"></span>
+            <div class="dish">
+              <span class="dish-label bg-naranja">Inexequible</span>
+              <ul class="zone-list">
+                <li class="token token--fixed" data-voice="actor"><svg class="ic"><use href="#i-persona"/></svg>Demandante</li>
+              </ul>
+            </div>
+          </div>
+          <div class="fulcrum zone" data-zone="mix" aria-label="Posición mixta">
+            <span class="fulcrum-label">Mixta</span>
+            <ul class="zone-list"></ul>
+          </div>
+        </div>
+        <p class="scoreline" id="vocesScore" aria-live="polite">Exequible 0 · Inexequible 1 · Mixta 0</p>
+      </div>
+
+      <div class="voces-side">
+        <div class="pool pool--voices" data-pool="voces" id="poolVoces">
+          <button class="chip chip--voice" type="button" data-chip="minjus"><svg class="ic"><use href="#i-centro"/></svg><span><b>Ministerio de Justicia y del Derecho</b><i>Interviniente</i></span></button>
+          <button class="chip chip--voice" type="button" data-chip="academia"><svg class="ic"><use href="#i-libro"/></svg><span><b>Academia Colombiana de Jurisprudencia</b><i>Interviniente</i></span></button>
+          <button class="chip chip--voice" type="button" data-chip="martinez"><svg class="ic"><use href="#i-persona"/></svg><span><b>Néstor Humberto Martínez Neira</b><i>Ciudadano interviniente</i></span></button>
+          <button class="chip chip--voice" type="button" data-chip="procurador"><svg class="ic"><use href="#i-balanza"/></svg><span><b>Procurador General de la Nación</b><i>Concepto 2944</i></span></button>
+        </div>
+        <article class="voice-panel" id="voicePanel" aria-live="polite">
+          <small>Su argumento</small>
+          <h3>El demandante</h3>
+          <p>Los centros de arbitraje ejercen funciones judiciales sin ser árbitros, y eso viola el artículo 116. Se apoya en un auto del Consejo de Estado (7 de diciembre de 2000) que califica esas funciones como judiciales.</p>
+          <p class="verdict"><b>¿La Corte le dio la razón?</b> En lo esencial, sí: la fase prearbitral es judicial.</p>
+        </article>
+      </div>
+    </div>
+    <a class="next next--light" href="#marco">Siguiente: 03 El marco <svg class="ic"><use href="#i-flecha"/></svg></a>
+  </div>
+</section>
+
+<!-- ===================== 03 EL MARCO ===================== -->
+<section class="sec sec--amarillo" id="marco" aria-labelledby="t-marco" data-sec="marco">
+  <div class="board grid-on-light" data-board="marco">
+    <header class="sec-head">
+      <h2 class="sec-title bg-azul" id="t-marco"><span>03</span> El marco</h2>
+      <button class="reset" data-reset="marco" type="button"><svg class="ic"><use href="#i-reset"/></svg>Reordenar</button>
+    </header>
+    <div class="marco-intro">
+      <h3 class="h3">¿Qué es el arbitraje para la Corte?</h3>
+      <blockquote class="quote">«Un mecanismo jurídico en virtud del cual las partes en conflicto deciden someter sus diferencias a la decisión de un tercero, aceptando anticipadamente sujetarse a lo que allí se adopte».</blockquote>
+      <p class="hint"><svg class="ic"><use href="#i-voltear"/></svg>Toca una tarjeta para voltearla; arrástrala por la agarradera para reordenar el concepto.</p>
+    </div>
+
+    <div class="flips">
+      <article class="flip drag" data-id="m1">
+        <span class="grip" aria-hidden="true"></span>
+        <button class="flip-inner" type="button" aria-pressed="false">
+          <span class="flip-front"><em>1</em><svg class="ic ic--xl"><use href="#i-mazo"/></svg><b>Particulares que administran justicia</b></span>
+          <span class="flip-back">Es uno de los instrumentos que la Constitución autoriza para que los particulares administren justicia, de forma transitoria (art. 116).</span>
+        </button>
+      </article>
+      <article class="flip drag flip--key" data-id="m2">
+        <span class="grip" aria-hidden="true"></span>
+        <button class="flip-inner" type="button" aria-pressed="false">
+          <span class="flip-front"><em>2</em><svg class="ic ic--xl"><use href="#i-llave"/></svg><b>Voluntario: principio de habilitación</b><span class="badge">Clave del caso</span></span>
+          <span class="flip-back">Solo un acuerdo previo, libre y voluntario de las partes desplaza a la justicia del Estado. Por eso la Corte ha tumbado arbitrajes obligatorios (C-242/97 y C-060/01).</span>
+        </button>
+      </article>
+      <article class="flip drag" data-id="m3">
+        <span class="grip" aria-hidden="true"></span>
+        <button class="flip-inner" type="button" aria-pressed="false">
+          <span class="flip-front"><em>3</em><svg class="ic ic--xl"><use href="#i-reloj"/></svg><b>Temporal</b></span>
+          <span class="flip-back">La competencia de los árbitros se limita al asunto que las partes les plantean.</span>
+        </button>
+      </article>
+      <article class="flip drag" data-id="m4">
+        <span class="grip" aria-hidden="true"></span>
+        <button class="flip-inner" type="button" aria-pressed="false">
+          <span class="flip-front"><em>4</em><svg class="ic ic--xl"><use href="#i-doc"/></svg><b>Excepcional</b></span>
+          <span class="flip-back">No todo problema jurídico puede resolverse en un laudo. Ejemplo: según la C-1436/00, los árbitros no juzgan actos administrativos dictados con poderes excepcionales.</span>
+        </button>
+      </article>
+      <article class="flip drag" data-id="m5">
+        <span class="grip" aria-hidden="true"></span>
+        <button class="flip-inner" type="button" aria-pressed="false">
+          <span class="flip-front"><em>5</em><svg class="ic ic--xl"><use href="#i-balanza"/></svg><b>Un verdadero proceso, regulado por la ley</b></span>
+          <span class="flip-back">Aunque lo decidan particulares, rigen las garantías del debido proceso (art. 29), y la ley puede regularlo «en los términos que determine» (C-163/99, C-330/00).</span>
+        </button>
+      </article>
+    </div>
+
+    <div class="prec">
+      <h3 class="h4">Precedentes que cita la Corte</h3>
+      <ul class="prec-list">
+        <li class="drag prec-chip t-naranja" data-id="p1"><span class="grip" aria-hidden="true"></span><b>C-242/97</b><span>Inexequible</span><i>Arbitraje obligatorio en los estatutos de empresas de servicios públicos.</i></li>
+        <li class="drag prec-chip t-verde" data-id="p2"><span class="grip" aria-hidden="true"></span><b>C-294/95</b><span>Exequible</span><i>Arbitraje en procesos de ejecución con excepciones de mérito.</i></li>
+        <li class="drag prec-chip t-verde" data-id="p3"><span class="grip" aria-hidden="true"></span><b>C-248/99</b><span>Exequible</span><i>Autonomía de la cláusula compromisoria.</i></li>
+        <li class="drag prec-chip t-verde" data-id="p4"><span class="grip" aria-hidden="true"></span><b>C-330/00</b><span>Exequible</span><i>Arbitraje voluntario en materia laboral.</i></li>
+        <li class="drag prec-chip t-amarillo" data-id="p5"><span class="grip" aria-hidden="true"></span><b>C-1436/00</b><span>Condicionada</span><i>Los árbitros no juzgan actos administrativos con poderes excepcionales.</i></li>
+        <li class="drag prec-chip t-naranja" data-id="p6"><span class="grip" aria-hidden="true"></span><b>C-060/01</b><span>Inexequible</span><i>Arbitraje forzoso en conflictos de concesiones de televisión.</i></li>
+        <li class="drag prec-chip t-verde" data-id="p7"><span class="grip" aria-hidden="true"></span><b>C-098/01</b><span>Exequible</span><i>Solo se arbitran asuntos «de carácter transigible».</i></li>
+      </ul>
+    </div>
+    <a class="next" href="#clave">Siguiente: 04 La pregunta clave <svg class="ic"><use href="#i-flecha"/></svg></a>
+  </div>
+</section>
+
+<!-- ===================== 04 LA PREGUNTA CLAVE ===================== -->
+<section class="sec sec--negro" id="clave" aria-labelledby="t-clave" data-sec="clave">
+  <div class="board grid-on-dark" data-board="clave">
+    <header class="sec-head">
+      <h2 class="sec-title bg-amarillo" id="t-clave"><span>04</span> La pregunta clave</h2>
+      <button class="reset reset--light" data-reset="clave" type="button"><svg class="ic"><use href="#i-reset"/></svg>Reiniciar</button>
+    </header>
+    <div class="clave-intro">
+      <h3 class="h3 h3--light">¿Lo que hace el centro es judicial o administrativo?</h3>
+      <p class="lead lead--light">Si fuera administrativo, la demanda no tendría piso. Si es judicial, el centro estaría haciendo lo que solo pueden hacer los árbitros. En 1993 la Corte había dicho que era administrativo (T-049/93) y el Consejo de Estado, que era judicial. Esta vez <strong>la Corte se puso del lado del Consejo de Estado</strong>.</p>
+    </div>
+
+    <div class="criterios">
+      <article class="card drag card--accent" data-id="k-formal" style="--accent:var(--azul)">
+        <span class="grip" aria-hidden="true"></span>
+        <small>Criterios formales</small>
+        <p>Una función se presume judicial si:</p>
+        <ol class="ol">
+          <li>produce actos con fuerza de cosa juzgada;</li>
+          <li>la ejercen jueces, o funcionarios con sus atributos (independencia, autonomía);</li>
+          <li>ocurre dentro de un proceso judicial o está indisolublemente ligada a él.</li>
+        </ol>
+      </article>
+      <article class="card drag card--accent" data-id="k-material" style="--accent:var(--morado)">
+        <span class="grip" aria-hidden="true"></span>
+        <small>Criterios materiales</small>
+        <ol class="ol">
+          <li>Restringir ciertos derechos, como la libertad, exige un juez (art. 28).</li>
+          <li>Una decisión que limite el acceso a la administración de justicia (art. 229) debe ser, en principio, judicial.</li>
+        </ol>
+      </article>
+    </div>
+
+    <div class="game" id="gameClave">
+      <div class="game-head">
+        <p class="play-title play-title--light"><svg class="ic"><use href="#i-mover"/></svg><span>Juego: ¿quién puede hacerlo? <em class="sub">Arrastra cada tarea a su zona (o tócala y luego toca la zona).</em></span></p>
+        <p class="game-score" id="claveScore" aria-live="polite">0 de 9</p>
+      </div>
+      <div class="pool pool--tasks" data-pool="tareas" id="poolTareas">
+        <button class="chip chip--task" type="button" data-chip="t-admitir">Admitir o rechazar la solicitud de convocatoria</button>
+        <button class="chip chip--task" type="button" data-chip="t-citar">Citar a las partes para que ellas designen a los árbitros</button>
+        <button class="chip chip--task" type="button" data-chip="t-traslado">Correr traslado de la demanda y recibir la contestación</button>
+        <button class="chip chip--task" type="button" data-chip="t-fecha">Fijar fecha y hora para instalar el tribunal</button>
+        <button class="chip chip--task" type="button" data-chip="t-reconv">Tramitar la reconvención (la contrademanda)</button>
+        <button class="chip chip--task" type="button" data-chip="t-requerir">Pedirle al tercero delegado que designe en 5 días</button>
+        <button class="chip chip--task" type="button" data-chip="t-concil">Hacer la audiencia de conciliación del trámite inicial</button>
+        <button class="chip chip--task" type="button" data-chip="t-entregar">Entregar a los árbitros la actuación surtida</button>
+        <button class="chip chip--task" type="button" data-chip="t-designar">Designar árbitros cuando las partes lo autorizaron</button>
+      </div>
+      <div class="zones">
+        <div class="dropzone zone dz--arb" data-zone="arb" tabindex="0" role="button" aria-label="Zona: solo los árbitros, función judicial">
+          <p class="dz-title"><svg class="ic"><use href="#i-mazo"/></svg><span><b>Solo los árbitros</b>Función judicial</span></p>
+          <ul class="zone-list"></ul>
+        </div>
+        <div class="dropzone zone dz--cen" data-zone="cen" tabindex="0" role="button" aria-label="Zona: el centro sí puede, apoyo">
+          <p class="dz-title"><svg class="ic"><use href="#i-centro"/></svg><span><b>El centro sí puede</b>Apoyo y logística</span></p>
+          <ul class="zone-list"></ul>
+        </div>
+      </div>
+      <p class="game-feedback" id="claveFeedback" aria-live="polite"></p>
+    </div>
+
+    <div class="verdict-grid">
+      <article class="card drag card--black-on-yellow" data-id="k-veredicto">
+        <span class="grip" aria-hidden="true"></span>
+        <small>Veredicto</small>
+        <p class="big">La fase prearbitral es <strong>jurisdiccional</strong>, porque:</p>
+        <ol class="ol ol--big">
+          <li>puede limitar el acceso a la administración de justicia;</li>
+          <li>está destinada a impulsar el proceso arbitral, que es jurisdiccional;</li>
+          <li>en fondo y forma se rige por el estatuto procesal civil.</li>
+        </ol>
+      </article>
+      <article class="card drag card--accent" data-id="k-entonces" style="--accent:var(--morado)">
+        <span class="grip" aria-hidden="true"></span>
+        <small>Y entonces…</small>
+        <p>El art. 116 solo deja que las partes habiliten a los árbitros. Por eso la ley no puede darle funciones judiciales al centro ni a su director:</p>
+        <blockquote class="quote quote--sm">«los centros de arbitramento no pueden ser habilitados por la ley para tomar decisiones judiciales indisolublemente ligadas a la suerte del proceso arbitral».</blockquote>
+        <p class="muted">Lo que sí pueden: existir, apoyar al tribunal, cumplir funciones de conciliación y designar árbitros cuando las partes los autorizan.</p>
+      </article>
+    </div>
+    <a class="next next--light" href="#designa">Siguiente: 05 ¿Quién designa? <svg class="ic"><use href="#i-flecha"/></svg></a>
+  </div>
+</section>
+
+<!-- ===================== 05 ¿QUIÉN DESIGNA? ===================== -->
+<section class="sec sec--paper" id="designa" aria-labelledby="t-designa" data-sec="designa">
+  <div class="board grid-on-light" data-board="designa">
+    <header class="sec-head">
+      <h2 class="sec-title bg-morado" id="t-designa"><span>05</span> ¿Quién designa a los árbitros?</h2>
+      <button class="reset" data-reset="designa" type="button"><svg class="ic"><use href="#i-reset"/></svg>Volver a empezar</button>
+    </header>
+    <p class="lead">El principio de habilitación, aplicado. Responde y sigue el camino: <strong>la voluntad de las partes manda</strong>.</p>
+    <div class="legend">
+      <span><i class="dot bg-negro"></i>Las partes</span>
+      <span><i class="dot bg-azul"></i>El centro de arbitraje</span>
+      <span><i class="dot bg-morado"></i>Los árbitros</span>
+      <span><i class="dot bg-gris1"></i>El juez civil del circuito</span>
+    </div>
+    <div class="path-grid">
+      <ol class="trail" id="trail" aria-live="polite"></ol>
+      <aside class="path-side">
+        <article class="card drag card--accent" data-id="d-delegar" style="--accent:var(--verde)">
+          <span class="grip" aria-hidden="true"></span>
+          <small>¿Delegar en un tercero?</small>
+          <p>Vale: si las partes acuerdan que un tercero elija, su designación se entiende como voluntad de las partes. El centro solo le pide que designe en 5 días.</p>
+        </article>
+        <article class="card drag card--accent" data-id="d-pacto" style="--accent:var(--negro)">
+          <span class="grip" aria-hidden="true"></span>
+          <small>¿Y si no hay acuerdo?</small>
+          <p>El pacto arbitral (cláusula compromisoria o compromiso) no se cae. Lo que queda es una disputa sobre quiénes serán los árbitros, y esa disputa la resuelve un juez.</p>
+        </article>
+      </aside>
+    </div>
+    <a class="next" href="#decision">Siguiente: 06 La decisión <svg class="ic"><use href="#i-flecha"/></svg></a>
+  </div>
+</section>
+
+<!-- ===================== 06 LA DECISIÓN ===================== -->
+<section class="sec sec--paper sec--soft" id="decision" aria-labelledby="t-decision" data-sec="decision">
+  <div class="board grid-on-light" data-board="decision">
+    <header class="sec-head">
+      <h2 class="sec-title bg-azul" id="t-decision"><span>06</span> La decisión</h2>
+      <button class="reset" data-reset="decision" type="button"><svg class="ic"><use href="#i-reset"/></svg>Reordenar</button>
+    </header>
+
+    <div class="cj">
+      <h3 class="h4">Paso previo: ¿ya estaba decidido? <span>La cosa juzgada</span></h3>
+      <div class="cj-rows">
+        <div class="cj-row">
+          <span class="cj-norm">Arts. 13 y 15 · Decreto 2651/91</span>
+          <svg class="ic"><use href="#i-flecha"/></svg>
+          <span class="cj-out t-gris1">Cosa juzgada (C-592/92)</span>
+          <p>Ya habían sido declarados exequibles. Que el decreto pasara de transitorio a permanente no cambia nada, porque su constitucionalidad no dependía de ser transitorio (C-804/00). Excepción: los numerales 3 y 4 del art. 15, que la Ley 446 modificó.</p>
+        </div>
+        <div class="cj-row">
+          <span class="cj-norm">Arts. 119, 121 y 122 · Ley 446/98</span>
+          <svg class="ic"><use href="#i-flecha"/></svg>
+          <span class="cj-out t-azul">Estudio de fondo</span>
+          <p>La C-672/99 solo los revisó por otro cargo (si necesitaban ley estatutaria). Además, por unidad normativa, la Corte estudió completos los arts. 121 y 122: la fase prearbitral funciona como un sistema.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="h4 resuelve-title">El «Resuelve», en cinco puntos</h3>
+    <div class="resuelve">
+      <article class="rcard drag t-gris1" data-id="r1"><span class="grip" aria-hidden="true"></span><em>1</em><small>Estarse a lo resuelto</small><p>Sobre el art. 13 y los numerales 1, 2, 5 y 6 del art. 15 del Decreto 2651/91: ya los había declarado exequibles la C-592 de 1992.</p></article>
+      <article class="rcard drag t-amarillo" data-id="r2"><span class="grip" aria-hidden="true"></span><em>2</em><small>Exequible condicionado</small><p>Numeral 3 del art. 15: «en caso contrario el Centro designará a los árbitros» solo aplica si las partes lo autorizaron previa y expresamente.</p></article>
+      <article class="rcard drag t-amarillo" data-id="r3"><span class="grip" aria-hidden="true"></span><em>3</em><small>Exequible condicionado</small><p>Numeral 4 del art. 15*: «El Centro hará las designaciones que no hagan las partes» solo aplica si lo prevén el compromiso o la cláusula compromisoria.</p></article>
+      <article class="rcard drag t-split-in" data-id="r4"><span class="grip" aria-hidden="true"></span><em>4</em><small>Inexequible en parte</small><p>Art. 121 de la Ley 446/98: salen «Previo a la instalación del tribunal de arbitramento» y el parágrafo. El resto queda, en el entendido de que el trámite inicial lo hace el tribunal, ya instalado.</p></article>
+      <article class="rcard drag t-split-ex" data-id="r5"><span class="grip" aria-hidden="true"></span><em>5</em><small>Exequible en parte</small><p>Art. 122 de la Ley 446/98: se mantiene, salvo «y fracasada la conciliación a que se refiere el artículo anterior de la presente ley, o si ésta fuere parcial», que sale.</p></article>
+    </div>
+    <p class="note">* El texto del Resuelve dice «numeral 3°», pero la expresión condicionada está en el numeral 4.º del art. 15, como se analiza en el fundamento 29 de la sentencia.</p>
+
+    <div class="flow">
+      <div class="flow-head">
+        <h3 class="h4">¿Cómo arranca un arbitraje?</h3>
+        <div class="toggle" role="group" aria-label="Ver el proceso antes o después de la sentencia">
+          <button type="button" data-state="antes" aria-pressed="true">Antes</button>
+          <button type="button" data-state="despues" aria-pressed="false">Después</button>
+        </div>
+      </div>
+      <p class="flow-caption" id="flowCaption">Antes, según el Decreto 2651/91 y la Ley 446/98: el centro hacía el trámite inicial.</p>
+      <ol class="flow-list" id="flowList"></ol>
+    </div>
+
+    <article class="card drag card--accent effects" data-id="r-efectos" style="--accent:var(--azul)">
+      <span class="grip" aria-hidden="true"></span>
+      <small><svg class="ic"><use href="#i-reloj"/></svg> Efectos en el tiempo</small>
+      <p><strong>Hacia el futuro, pero inmediatos.</strong> No afecta los arbitrajes que ya habían superado la fase prearbitral; sí se aplica a los que no la habían superado. En adelante, las partes convocan directamente el tribunal, con apoyo material y logístico de los centros cuando haga falta.</p>
+    </article>
+    <a class="next" href="#votos">Siguiente: 07 Votos y cierre <svg class="ic"><use href="#i-flecha"/></svg></a>
+  </div>
+</section>
+
+<!-- ===================== 07 VOTOS Y CIERRE ===================== -->
+<section class="sec sec--gris" id="votos" aria-labelledby="t-votos" data-sec="votos">
+  <div class="board grid-on-light" data-board="votos">
+    <header class="sec-head">
+      <h2 class="sec-title bg-negro" id="t-votos"><span>07</span> Votos y cierre</h2>
+      <button class="reset" data-reset="votos" type="button"><svg class="ic"><use href="#i-reset"/></svg>Reordenar</button>
+    </header>
+
+    <div class="sala">
+      <h3 class="h4">Sala Plena</h3>
+      <ul class="sala-list">
+        <li>Marco Gerardo Monroy Cabra <i>Presidente</i></li>
+        <li>Jaime Araújo Rentería <i>Aclaró el voto</i></li>
+        <li>Alfredo Beltrán Sierra</li>
+        <li>Manuel José Cepeda Espinosa</li>
+        <li>Jaime Córdoba Triviño</li>
+        <li>Rodrigo Escobar Gil</li>
+        <li class="is-ponente">Eduardo Montealegre Lynett <i>Ponente · salvó parcialmente el voto</i></li>
+        <li>Álvaro Tafur Galvis</li>
+        <li>Clara Inés Vargas Hernández</li>
+      </ul>
+    </div>
+
+    <div class="votos-grid">
+      <article class="card drag card--accent" data-id="v-salv" style="--accent:var(--gris1)">
+        <span class="grip" aria-hidden="true"></span>
+        <small>Salvamento parcial de voto</small>
+        <h3 class="h5">El propio ponente: Eduardo Montealegre Lynett</h3>
+        <p>Para él no había cosa juzgada sobre el art. 13 y los numerales 1, 2, 5 y 6 del art. 15: un decreto transitorio que una ley vuelve permanente es una norma formalmente distinta. Además, la temporalidad sí fue clave para que la C-592/92 declarara exequible ese decreto.</p>
+      </article>
+      <article class="card drag card--accent" data-id="v-aclar" style="--accent:var(--gris1)">
+        <span class="grip" aria-hidden="true"></span>
+        <small>Aclaración de voto</small>
+        <h3 class="h5">Jaime Araújo Rentería</h3>
+        <p>Solo el fallo de inexequibilidad hace cosa juzgada absoluta; la exequibilidad siempre es relativa, porque la Corte puede volver sobre ella. Y basta un cambio en el orden jurídico para que una norma idéntica sea, en rigor, otra norma.</p>
+      </article>
+      <article class="idea drag" data-id="v-idea">
+        <span class="grip grip--light" aria-hidden="true"></span>
+        <small>Idea fuerza</small>
+        <p class="idea-t">Las partes habilitan a los árbitros, no al centro.</p>
+        <p>El centro apoya, los árbitros deciden y, si las partes no se ponen de acuerdo, un juez civil designa.</p>
+      </article>
+    </div>
+
+    <div class="recordar">
+      <h3 class="h4">Para recordar</h3>
+      <ol class="recordar-list">
+        <li><b>1</b>La fase prearbitral es jurisdiccional.</li>
+        <li><b>2</b>Solo los árbitros habilitados por las partes ejercen funciones judiciales (art. 116).</li>
+        <li><b>3</b>Los centros sí pueden apoyar, conciliar y designar árbitros cuando las partes los autorizan.</li>
+      </ol>
+    </div>
+
+    <a class="next" href="#mapa">Siguiente: 08 Arma el mapa <svg class="ic"><use href="#i-flecha"/></svg></a>
+  </div>
+</section>
+
+<!-- ===================== 08 ARMA EL MAPA (TABLERO DE REPASO) ===================== -->
+<section class="sec sec--azul sec--mapa" id="mapa" aria-labelledby="t-mapa" data-sec="mapa">
+  <div class="board grid-on-dark" data-board="mapa">
+    <header class="sec-head">
+      <h2 class="sec-title bg-amarillo" id="t-mapa"><span>08</span> Arma el mapa</h2>
+      <div class="mapa-tools">
+        <button class="reset reset--light" data-reset="mapa" type="button"><svg class="ic"><use href="#i-reset"/></svg>Mezclar</button>
+        <button class="reset reset--light" id="mapaFull" type="button" aria-pressed="false"><svg class="ic"><use href="#i-expand"/></svg><span>Pantalla completa</span></button>
+      </div>
+    </header>
+    <p class="lead lead--light">Tablero de repaso: las doce piezas de la sentencia están sueltas en la mesa. <strong>Arrastra cada una a su casilla</strong> (o tócala y luego toca la casilla) y pulsa <strong>Revisar</strong>. Las que no van vuelven a la mesa.</p>
+
+    <div class="mapa-game" id="gameMapa">
+      <div class="mapa-map">
+        <div class="mapa-done" id="mapaDone" hidden>
+          <div class="cenefa-grow" aria-hidden="true"></div>
+          <p class="mapa-done-t">¡Mapa completo!</p>
+          <p>Así se lee la C-1038/02 de un vistazo: las partes habilitan a los árbitros; el centro apoya, pero no decide.</p>
+        </div>
+        <div class="band band--a">
+          <h3 class="band-title"><span>A</span>El caso</h3>
+          <div class="band-slots c2">
+            <div class="slot zone" data-slot="a1" tabindex="0" role="button" aria-label="Casilla 1: ¿Qué se demandó?">
+              <p class="slot-label"><b>1</b><span>¿Qué se demandó?</span></p>
+              <div class="slot-body"></div>
+            </div>
+            <div class="slot zone" data-slot="a2" tabindex="0" role="button" aria-label="Casilla 2: ¿Contra qué norma?">
+              <p class="slot-label"><b>2</b><span>¿Contra qué norma?</span></p>
+              <div class="slot-body"></div>
+            </div>
+          </div>
+        </div>
+        <p class="link-word" aria-hidden="true"><span>plantea</span></p>
+        <div class="band band--b">
+          <h3 class="band-title"><span>B</span>El problema jurídico</h3>
+          <div class="band-slots c1">
+            <div class="slot zone" data-slot="b1" tabindex="0" role="button" aria-label="Casilla 3: La pregunta de la Corte">
+              <p class="slot-label"><b>3</b><span>La pregunta de la Corte</span></p>
+              <div class="slot-body"></div>
+            </div>
+          </div>
+        </div>
+        <p class="link-word" aria-hidden="true"><span>la Corte responde</span></p>
+        <div class="band band--c">
+          <h3 class="band-title"><span>C</span>La razón de la decisión</h3>
+          <div class="band-slots c3">
+            <div class="slot zone" data-slot="c1" tabindex="0" role="button" aria-label="Casilla 4: ¿Qué es la fase prearbitral?">
+              <p class="slot-label"><b>4</b><span>¿Qué es la fase prearbitral?</span></p>
+              <div class="slot-body"></div>
+            </div>
+            <div class="slot zone" data-slot="c2" tabindex="0" role="button" aria-label="Casilla 5: ¿Quién habilita a los árbitros?">
+              <p class="slot-label"><b>5</b><span>¿Quién habilita a los árbitros?</span></p>
+              <div class="slot-body"></div>
+            </div>
+            <div class="slot zone" data-slot="c3" tabindex="0" role="button" aria-label="Casilla 6: ¿Qué sí puede hacer el centro?">
+              <p class="slot-label"><b>6</b><span>¿Qué sí puede hacer el centro?</span></p>
+              <div class="slot-body"></div>
+            </div>
+          </div>
+        </div>
+        <p class="link-word" aria-hidden="true"><span>por eso resuelve</span></p>
+        <div class="band band--d">
+          <h3 class="band-title"><span>D</span>Lo que resolvió</h3>
+          <div class="band-slots c4">
+            <div class="slot zone" data-slot="d1" tabindex="0" role="button" aria-label="Casilla 7: Estarse a lo resuelto">
+              <p class="slot-label"><b>7</b><span><span class="slot-tag">Estarse a lo resuelto</span></span></p>
+              <div class="slot-body"></div>
+            </div>
+            <div class="slot zone" data-slot="d2" tabindex="0" role="button" aria-label="Casilla 8: Exequible condicionado">
+              <p class="slot-label"><b>8</b><span><span class="slot-tag">Exequible condicionado</span></span></p>
+              <div class="slot-body"></div>
+            </div>
+            <div class="slot zone" data-slot="d3" tabindex="0" role="button" aria-label="Casilla 9: Inexequible en parte">
+              <p class="slot-label"><b>9</b><span><span class="slot-tag">Inexequible en parte</span></span></p>
+              <div class="slot-body"></div>
+            </div>
+            <div class="slot zone" data-slot="d4" tabindex="0" role="button" aria-label="Casilla 10: Exequible en parte">
+              <p class="slot-label"><b>10</b><span><span class="slot-tag">Exequible en parte</span></span></p>
+              <div class="slot-body"></div>
+            </div>
+          </div>
+        </div>
+        <p class="link-word" aria-hidden="true"><span>con efectos</span></p>
+        <div class="band band--e">
+          <h3 class="band-title"><span>E</span>Después del fallo</h3>
+          <div class="band-slots c2">
+            <div class="slot zone" data-slot="e1" tabindex="0" role="button" aria-label="Casilla 11: ¿Desde cuándo rige?">
+              <p class="slot-label"><b>11</b><span>¿Desde cuándo rige?</span></p>
+              <div class="slot-body"></div>
+            </div>
+            <div class="slot zone" data-slot="e2" tabindex="0" role="button" aria-label="Casilla 12: Votos particulares">
+              <p class="slot-label"><b>12</b><span>Votos particulares</span></p>
+              <div class="slot-body"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="mesa zone" id="mesa" data-slot="mesa" tabindex="0" aria-label="La mesa: piezas por colocar. Suelta aquí para devolver una pieza.">
+        <div class="mesa-head">
+          <p class="mesa-title"><b>La mesa</b><span id="mapaLeft">12 piezas sueltas</span></p>
+          <div class="mesa-actions">
+            <button class="mbtn mbtn--check" type="button" id="mapaCheck"><svg class="ic"><use href="#i-check"/></svg>Revisar</button>
+            <button class="mbtn" type="button" id="mapaSolve">Ver solución</button>
+          </div>
+        </div>
+        <div class="mesa-list" id="mesaList">
+          <button class="piece" type="button" data-piece="a1">Arts. 13 y 15 del Decreto 2651/91 y 119, 121 y 122 de la Ley 446/98: la «etapa prearbitral».</button>
+          <button class="piece" type="button" data-piece="a2">Art. 116 C.P.: los particulares pueden administrar justicia como árbitros habilitados por las partes.</button>
+          <button class="piece" type="button" data-piece="b1">¿Puede la ley darle al centro de arbitraje funciones judiciales antes de que exista el tribunal?</button>
+          <button class="piece" type="button" data-piece="c1">La fase prearbitral es jurisdiccional: admitir o rechazar la solicitud limita el acceso a la justicia.</button>
+          <button class="piece" type="button" data-piece="c2">Solo las partes habilitan a los árbitros: la ley no puede habilitar al centro para decidir.</button>
+          <button class="piece" type="button" data-piece="c3">El centro sí puede apoyar al tribunal y conciliar, sin decidir la suerte del proceso.</button>
+          <button class="piece" type="button" data-piece="d1">Art. 13 y numerales 1, 2, 5 y 6 del art. 15: ya los había avalado la C-592/92.</button>
+          <button class="piece" type="button" data-piece="d2">Numerales 3 y 4 del art. 15: el centro designa árbitros solo si las partes lo autorizaron.</button>
+          <button class="piece" type="button" data-piece="d3">Art. 121: sale «previo a la instalación…» y el parágrafo; el trámite inicial lo hace el tribunal ya instalado.</button>
+          <button class="piece" type="button" data-piece="d4">Art. 122: se mantiene, pero sale «y fracasada la conciliación…».</button>
+          <button class="piece" type="button" data-piece="e1">Hacia el futuro, pero inmediatos: rige para los arbitrajes que no habían superado la fase prearbitral.</button>
+          <button class="piece" type="button" data-piece="e2">Salvamento parcial del ponente y aclaración de voto de Jaime Araújo Rentería.</button>
+        </div>
+        <p class="mesa-empty" id="mesaEmpty">No quedan piezas en la mesa. Pulsa <b>Revisar</b>.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot grid-on-light">
+  <div class="credits">
+    <div class="cenefa-static" aria-hidden="true"></div>
+    <p><strong>Fuente:</strong> Corte Constitucional de Colombia, Sentencia C-1038 de 2002 (expediente D-4066), M.P. Eduardo Montealegre Lynett. Contexto: hoy el arbitraje en Colombia se rige por el Estatuto de Arbitraje Nacional e Internacional (Ley 1563 de 2012).</p>
+    <p>Diseño basado en el Manual de identidad de marca de la Universidad Icesi (2026).</p>
+    <div class="credits-actions">
+      <a class="btn btn--blue" href="#inicio">Volver al inicio</a>
+      <button class="btn btn--ghost" type="button" id="resetAll"><svg class="ic"><use href="#i-reset"/></svg>Reordenar todo</button>
+    </div>
+    <img class="credits-logo" src="assets/logo-universidad-icesi-azul.svg" alt="Universidad Icesi" width="160" height="59">
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="app.js" defer></script>
+</body>
+</html>

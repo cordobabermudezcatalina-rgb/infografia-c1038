@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sentencia C-1038/02 · Infografía interactiva</title>
-<meta name="description" content="Infografía interactiva sobre la Sentencia C-1038 de 2002 de la Corte Constitucional: quién puede decidir en un arbitraje, qué pueden hacer los centros de arbitraje y un tablero para armar el mapa de la sentencia.">
+<meta name="description" content="Infografía interactiva sobre la Sentencia C-1038 de 2002 de la Corte Constitucional: quién puede decidir en un arbitraje, y qué pueden hacer los centros de arbitraje.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sentencia C-1038/02 · Infografía interactiva">
-<meta property="og:description" content="¿Quién puede decidir en un arbitraje? Recorrido interactivo y tablero de repaso sobre la C-1038 de 2002.">
+<meta property="og:description" content="¿Quién puede decidir en un arbitraje? Recorrido interactivo sobre la C-1038 de 2002.">
 <meta name="theme-color" content="#5454E9">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,17 +38,15 @@
     <symbol id="i-voltear" viewBox="0 0 24 24"><path d="M3 9h15l-4-4M21 15H6l4 4"/></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
     <symbol id="i-juez" viewBox="0 0 24 24"><circle cx="12" cy="6.5" r="3.5"/><path d="M5 22v-6l7-4 7 4v6zM12 12v10"/></symbol>
-    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
-    <symbol id="i-compress" viewBox="0 0 24 24"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></symbol>
-    <symbol id="i-mapa" viewBox="0 0 24 24"><path d="M3 4h7v7H3zM14 4h7v7h-7zM3 15h7v5H3zM14 15h7v5h-7zM6.5 11v4M17.5 11v4"/></symbol>
   </defs>
 </svg>
 
 <a class="skip" href="#caso">Saltar al contenido</a>
 
 <header class="topbar" id="topbar">
-  <a class="topbar-logo" href="#inicio" aria-label="Universidad Icesi, ir al inicio">
-    <img src="assets/logo-universidad-icesi-azul.svg" alt="Universidad Icesi" width="129" height="48">
+  <a class="topbar-brand" href="#inicio" aria-label="Sentencia C-1038/02, ir al inicio">
+    <span class="brand-mark" aria-hidden="true"><svg class="ic"><use href="#i-balanza"/></svg></span>
+    <span class="brand-text"><b>C-1038/02</b><small>Infografía interactiva</small></span>
   </a>
   <nav class="topnav" aria-label="Secciones">
     <a href="#inicio" data-nav="inicio"><b>00</b><span>Portada</span></a>
@@ -59,7 +57,6 @@
     <a href="#designa" data-nav="designa"><b>05</b><span>¿Quién designa?</span></a>
     <a href="#decision" data-nav="decision"><b>06</b><span>La decisión</span></a>
     <a href="#votos" data-nav="votos"><b>07</b><span>Votos</span></a>
-    <a href="#mapa" data-nav="mapa"><b>08</b><span>El mapa</span></a>
   </nav>
   <div class="cenefa" id="cenefa" role="progressbar" aria-label="Avance de lectura" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
   <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="topnav-sheet"><svg class="ic"><use href="#i-menu"/></svg><span class="sr">Índice</span></button>
@@ -79,7 +76,7 @@
       <div class="cover-actions">
         <a class="btn btn--white" href="#caso">Empezar el recorrido <svg class="ic"><use href="#i-abajo"/></svg></a>
       </div>
-      <p class="hint hint--light"><svg class="ic"><use href="#i-mover"/></svg>Todas las tarjetas se pueden mover: arrástralas y se acomodan solas sobre la retícula. Usa ← y → para pasar de sección. Al final te espera un tablero para <a href="#mapa">armar el mapa de la sentencia</a>.</p>
+      <p class="hint hint--light"><svg class="ic"><use href="#i-mover"/></svg>Todas las tarjetas se pueden mover: arrástralas y se acomodan solas sobre la retícula. Usa ← y → para pasar de sección.</p>
     </div>
     <div class="cover-cards">
       <article class="card drag" data-id="f-fecha" style="--r:-3deg"><span class="grip" aria-hidden="true"></span><small>Fecha</small><strong>28 de noviembre de 2002</strong></article>
@@ -88,6 +85,7 @@
       <article class="card drag" data-id="f-exp" style="--r:-2deg"><span class="grip" aria-hidden="true"></span><small>Expediente</small><strong>D-4066</strong></article>
       <article class="card drag card--black" data-id="f-norma" style="--r:-1deg"><span class="grip" aria-hidden="true"></span><small>Norma en juego</small><strong>Artículo 116 de la Constitución</strong></article>
       <article class="card drag" data-id="f-accion" style="--r:2.5deg"><span class="grip" aria-hidden="true"></span><small>Acción</small><strong>Pública de inconstitucionalidad</strong></article>
+      <article class="card drag card--team" data-id="f-equipo" style="--r:-1deg"><span class="grip" aria-hidden="true"></span><small>Exponen</small><ul class="team-list"><li>Catalina Córdoba</li><li>Mariana Urbano</li><li>Sara Vivas</li><li>Alejandro Hurtado</li></ul></article>
     </div>
   </div>
 </section>
@@ -496,133 +494,6 @@
       </ol>
     </div>
 
-    <a class="next" href="#mapa">Siguiente: 08 Arma el mapa <svg class="ic"><use href="#i-flecha"/></svg></a>
-  </div>
-</section>
-
-<!-- ===================== 08 ARMA EL MAPA (TABLERO DE REPASO) ===================== -->
-<section class="sec sec--azul sec--mapa" id="mapa" aria-labelledby="t-mapa" data-sec="mapa">
-  <div class="board grid-on-dark" data-board="mapa">
-    <header class="sec-head">
-      <h2 class="sec-title bg-amarillo" id="t-mapa"><span>08</span> Arma el mapa</h2>
-      <div class="mapa-tools">
-        <button class="reset reset--light" data-reset="mapa" type="button"><svg class="ic"><use href="#i-reset"/></svg>Mezclar</button>
-        <button class="reset reset--light" id="mapaFull" type="button" aria-pressed="false"><svg class="ic"><use href="#i-expand"/></svg><span>Pantalla completa</span></button>
-      </div>
-    </header>
-    <p class="lead lead--light">Tablero de repaso: las doce piezas de la sentencia están sueltas en la mesa. <strong>Arrastra cada una a su casilla</strong> (o tócala y luego toca la casilla) y pulsa <strong>Revisar</strong>. Las que no van vuelven a la mesa.</p>
-
-    <div class="mapa-game" id="gameMapa">
-      <div class="mapa-map">
-        <div class="mapa-done" id="mapaDone" hidden>
-          <div class="cenefa-grow" aria-hidden="true"></div>
-          <p class="mapa-done-t">¡Mapa completo!</p>
-          <p>Así se lee la C-1038/02 de un vistazo: las partes habilitan a los árbitros; el centro apoya, pero no decide.</p>
-        </div>
-        <div class="band band--a">
-          <h3 class="band-title"><span>A</span>El caso</h3>
-          <div class="band-slots c2">
-            <div class="slot zone" data-slot="a1" tabindex="0" role="button" aria-label="Casilla 1: ¿Qué se demandó?">
-              <p class="slot-label"><b>1</b><span>¿Qué se demandó?</span></p>
-              <div class="slot-body"></div>
-            </div>
-            <div class="slot zone" data-slot="a2" tabindex="0" role="button" aria-label="Casilla 2: ¿Contra qué norma?">
-              <p class="slot-label"><b>2</b><span>¿Contra qué norma?</span></p>
-              <div class="slot-body"></div>
-            </div>
-          </div>
-        </div>
-        <p class="link-word" aria-hidden="true"><span>plantea</span></p>
-        <div class="band band--b">
-          <h3 class="band-title"><span>B</span>El problema jurídico</h3>
-          <div class="band-slots c1">
-            <div class="slot zone" data-slot="b1" tabindex="0" role="button" aria-label="Casilla 3: La pregunta de la Corte">
-              <p class="slot-label"><b>3</b><span>La pregunta de la Corte</span></p>
-              <div class="slot-body"></div>
-            </div>
-          </div>
-        </div>
-        <p class="link-word" aria-hidden="true"><span>la Corte responde</span></p>
-        <div class="band band--c">
-          <h3 class="band-title"><span>C</span>La razón de la decisión</h3>
-          <div class="band-slots c3">
-            <div class="slot zone" data-slot="c1" tabindex="0" role="button" aria-label="Casilla 4: ¿Qué es la fase prearbitral?">
-              <p class="slot-label"><b>4</b><span>¿Qué es la fase prearbitral?</span></p>
-              <div class="slot-body"></div>
-            </div>
-            <div class="slot zone" data-slot="c2" tabindex="0" role="button" aria-label="Casilla 5: ¿Quién habilita a los árbitros?">
-              <p class="slot-label"><b>5</b><span>¿Quién habilita a los árbitros?</span></p>
-              <div class="slot-body"></div>
-            </div>
-            <div class="slot zone" data-slot="c3" tabindex="0" role="button" aria-label="Casilla 6: ¿Qué sí puede hacer el centro?">
-              <p class="slot-label"><b>6</b><span>¿Qué sí puede hacer el centro?</span></p>
-              <div class="slot-body"></div>
-            </div>
-          </div>
-        </div>
-        <p class="link-word" aria-hidden="true"><span>por eso resuelve</span></p>
-        <div class="band band--d">
-          <h3 class="band-title"><span>D</span>Lo que resolvió</h3>
-          <div class="band-slots c4">
-            <div class="slot zone" data-slot="d1" tabindex="0" role="button" aria-label="Casilla 7: Estarse a lo resuelto">
-              <p class="slot-label"><b>7</b><span><span class="slot-tag">Estarse a lo resuelto</span></span></p>
-              <div class="slot-body"></div>
-            </div>
-            <div class="slot zone" data-slot="d2" tabindex="0" role="button" aria-label="Casilla 8: Exequible condicionado">
-              <p class="slot-label"><b>8</b><span><span class="slot-tag">Exequible condicionado</span></span></p>
-              <div class="slot-body"></div>
-            </div>
-            <div class="slot zone" data-slot="d3" tabindex="0" role="button" aria-label="Casilla 9: Inexequible en parte">
-              <p class="slot-label"><b>9</b><span><span class="slot-tag">Inexequible en parte</span></span></p>
-              <div class="slot-body"></div>
-            </div>
-            <div class="slot zone" data-slot="d4" tabindex="0" role="button" aria-label="Casilla 10: Exequible en parte">
-              <p class="slot-label"><b>10</b><span><span class="slot-tag">Exequible en parte</span></span></p>
-              <div class="slot-body"></div>
-            </div>
-          </div>
-        </div>
-        <p class="link-word" aria-hidden="true"><span>con efectos</span></p>
-        <div class="band band--e">
-          <h3 class="band-title"><span>E</span>Después del fallo</h3>
-          <div class="band-slots c2">
-            <div class="slot zone" data-slot="e1" tabindex="0" role="button" aria-label="Casilla 11: ¿Desde cuándo rige?">
-              <p class="slot-label"><b>11</b><span>¿Desde cuándo rige?</span></p>
-              <div class="slot-body"></div>
-            </div>
-            <div class="slot zone" data-slot="e2" tabindex="0" role="button" aria-label="Casilla 12: Votos particulares">
-              <p class="slot-label"><b>12</b><span>Votos particulares</span></p>
-              <div class="slot-body"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <aside class="mesa zone" id="mesa" data-slot="mesa" tabindex="0" aria-label="La mesa: piezas por colocar. Suelta aquí para devolver una pieza.">
-        <div class="mesa-head">
-          <p class="mesa-title"><b>La mesa</b><span id="mapaLeft">12 piezas sueltas</span></p>
-          <div class="mesa-actions">
-            <button class="mbtn mbtn--check" type="button" id="mapaCheck"><svg class="ic"><use href="#i-check"/></svg>Revisar</button>
-            <button class="mbtn" type="button" id="mapaSolve">Ver solución</button>
-          </div>
-        </div>
-        <div class="mesa-list" id="mesaList">
-          <button class="piece" type="button" data-piece="a1">Arts. 13 y 15 del Decreto 2651/91 y 119, 121 y 122 de la Ley 446/98: la «etapa prearbitral».</button>
-          <button class="piece" type="button" data-piece="a2">Art. 116 C.P.: los particulares pueden administrar justicia como árbitros habilitados por las partes.</button>
-          <button class="piece" type="button" data-piece="b1">¿Puede la ley darle al centro de arbitraje funciones judiciales antes de que exista el tribunal?</button>
-          <button class="piece" type="button" data-piece="c1">La fase prearbitral es jurisdiccional: admitir o rechazar la solicitud limita el acceso a la justicia.</button>
-          <button class="piece" type="button" data-piece="c2">Solo las partes habilitan a los árbitros: la ley no puede habilitar al centro para decidir.</button>
-          <button class="piece" type="button" data-piece="c3">El centro sí puede apoyar al tribunal y conciliar, sin decidir la suerte del proceso.</button>
-          <button class="piece" type="button" data-piece="d1">Art. 13 y numerales 1, 2, 5 y 6 del art. 15: ya los había avalado la C-592/92.</button>
-          <button class="piece" type="button" data-piece="d2">Numerales 3 y 4 del art. 15: el centro designa árbitros solo si las partes lo autorizaron.</button>
-          <button class="piece" type="button" data-piece="d3">Art. 121: sale «previo a la instalación…» y el parágrafo; el trámite inicial lo hace el tribunal ya instalado.</button>
-          <button class="piece" type="button" data-piece="d4">Art. 122: se mantiene, pero sale «y fracasada la conciliación…».</button>
-          <button class="piece" type="button" data-piece="e1">Hacia el futuro, pero inmediatos: rige para los arbitrajes que no habían superado la fase prearbitral.</button>
-          <button class="piece" type="button" data-piece="e2">Salvamento parcial del ponente y aclaración de voto de Jaime Araújo Rentería.</button>
-        </div>
-        <p class="mesa-empty" id="mesaEmpty">No quedan piezas en la mesa. Pulsa <b>Revisar</b>.</p>
-      </aside>
-    </div>
   </div>
 </section>
 
@@ -631,13 +502,13 @@
 <footer class="site-foot grid-on-light">
   <div class="credits">
     <div class="cenefa-static" aria-hidden="true"></div>
+    <p><strong>Elaborado por:</strong> Catalina Córdoba, Mariana Urbano, Sara Vivas y Alejandro Hurtado.</p>
     <p><strong>Fuente:</strong> Corte Constitucional de Colombia, Sentencia C-1038 de 2002 (expediente D-4066), M.P. Eduardo Montealegre Lynett. Contexto: hoy el arbitraje en Colombia se rige por el Estatuto de Arbitraje Nacional e Internacional (Ley 1563 de 2012).</p>
     <p>Diseño basado en el Manual de identidad de marca de la Universidad Icesi (2026).</p>
     <div class="credits-actions">
       <a class="btn btn--blue" href="#inicio">Volver al inicio</a>
       <button class="btn btn--ghost" type="button" id="resetAll"><svg class="ic"><use href="#i-reset"/></svg>Reordenar todo</button>
     </div>
-    <img class="credits-logo" src="assets/logo-universidad-icesi-azul.svg" alt="Universidad Icesi" width="160" height="59">
   </div>
 </footer>
 
